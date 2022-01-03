@@ -1,3 +1,4 @@
+Challange : 1
 
 """
 Capital indexes
@@ -11,3 +12,18 @@ def capital_indexes(str):
     return capital_list       
 
 capital_indexes("HI")        
+
+
+challange:2 
+"""
+Middle letter
+Write a function named mid that takes a string as its parameter. Your function should extract and return the middle letter. If there is no middle letter, your function should return the empty string.
+
+For example, mid("abc") should return "b" and mid("aaaa") should return "".
+"""
+
+def mid(string):
+    l = len(string)
+    midindex =  (l//2) 
+    return string[midindex] if l%2 == 1 else ""
+value = mid("abced")
